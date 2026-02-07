@@ -3,8 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>𓆩✦𓆪 رَمَضَـان كَـرِيـم 𓆩✦𓆪</title>
+
+<!-- الخطوط -->
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap" rel="stylesheet">
 
 <meta property="og:title" content="𓆩✦𓆪 رَمَضَـان كَـرِيـم 𓆩✦𓆪">
 <meta property="og:description" content="انضم إلى جروب واتساب رمضاني | هزار – فرح – روح رمضانية">
@@ -13,123 +15,93 @@
 <style>
 body{
     margin:0;
-    font-family:tahoma;
-    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    color:#fff;
+    font-family:'Almarai', sans-serif;
+    background: url('file_00000000d9ec71f5b0a3d70ebf507b32.png') no-repeat center center fixed;
+    background-size: cover;
     text-align:center;
+    color:#fff;
 }
 
 .container{
     max-width:420px;
     margin:auto;
     padding:20px;
+    text-align:center;
+    position: relative;
+    z-index:2;
 }
 
 .logo{
     width:120px;
     margin:20px auto;
+    display:block;
 }
 
 .group-img{
     width:100%;
     border-radius:15px;
-    box-shadow:0 0 20px gold;
+    box-shadow:0 0 15px rgba(37,211,102,0.7);
     margin:20px 0;
 }
 
 h1{
-    color:gold;
+    font-size:32px;
+    font-weight:900;
+    color:#25D366; /* لون واتساب */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin:15px 0;
 }
 
 .join-btn{
     background:#25D366;
     color:#fff;
-    padding:15px;
+    padding:18px;
     border-radius:12px;
-    font-size:20px;
-    text-decoration:none;
-    display:block;
-    margin-top:20px;
-    cursor:pointer;
-}
-
-.overlay{
-    position:fixed;
-    top:0;left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.9);
-    display:none;
-    align-items:center;
-    justify-content:center;
-    z-index:999;
-}
-
-.video-box{
-    width:90%;
-    max-width:500px;
-}
-
-.video-box video{
-    width:100%;
-    border-radius:12px;
-}
-
-.skip-btn{
-    margin-top:15px;
-    background:#ffd700;
-    color:#000;
-    padding:12px;
-    border-radius:10px;
-    display:none;
-    cursor:pointer;
+    font-size:22px;
     font-weight:bold;
+    text-decoration:none;
+    display:inline-block;
+    margin-top:15px;
+    cursor:pointer;
+    box-shadow:0 0 15px rgba(37,211,102,0.7);
+    transition:0.3s;
+}
+
+.join-btn:hover{
+    background:#1ebe5d;
+}
+
+.footer{
+    margin-top:15px;
+    font-size:14px;
+    color:#fff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 </style>
 </head>
-
 <body>
 
 <div class="container">
 
-<img src="logo.png" class="logo" alt="لوجو الموقع">
+    <!-- لوجو الموقع -->
+    <img src="logo.png" class="logo" alt="لوجو الموقع">
 
-<h1>𓆩✦𓆪 رَمَضَـان كَـرِيـم 𓆩✦𓆪</h1>
+    <!-- اسم الجروب -->
+    <h1>𓆩✦𓆪 رَمَضَـان كَـرِيـم 𓆩✦𓆪</h1>
 
-<img src="group.png" class="group-img" alt="صورة الجروب">
+    <!-- صورة الجروب -->
+    <img src="group.png" class="group-img" alt="صورة الجروب">
 
-<div class="join-btn" onclick="showVideo()">✅ انضم الآن</div>
+    <!-- زر الانضمام -->
+    <a class="join-btn" href="https://chat.whatsapp.com/GSbUn3ZGwSEI3kHI2RwaiV?mode=gi_t" target="_blank">
+        ✅ انضم الآن
+    </a>
 
-</div>
-
-<!-- شاشة الفيديو -->
-<div class="overlay" id="videoLayer">
-  <div class="video-box">
-    <video id="promoVideo" controls>
-      <source src="14ab5c62f57c1836d41eb29bcd333fa4.mp4" type="video/mp4">
-      متصفحك لا يدعم تشغيل الفيديو
-    </video>
-
-    <div class="skip-btn" id="goBtn" onclick="goWhatsapp()">
-      ▶ دخول الجروب
+    <div class="footer">
+        ✦ رمضان يجمعنا ✦
     </div>
-  </div>
+
 </div>
-
-<script>
-function showVideo(){
-    document.getElementById("videoLayer").style.display="flex";
-    document.getElementById("promoVideo").play();
-}
-
-document.getElementById("promoVideo").onended = function(){
-    document.getElementById("goBtn").style.display="block";
-};
-
-function goWhatsapp(){
-    window.location.href="https://chat.whatsapp.com/GSbUn3ZGwSEI3kHI2RwaiV?mode=gi_t";
-}
-</script>
 
 </body>
 </html>
