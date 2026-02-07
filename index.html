@@ -5,53 +5,94 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>𓆩✦𓆪 رَمَضَـان كَـرِيـم 𓆩✦𓆪</title>
 
-<!-- الخطوط -->
+<!-- الخط -->
 <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap" rel="stylesheet">
 
+<!-- Meta Tags للمشاركة القوية -->
+<meta name="description" content="انضم إلى جروب واتساب رمضاني 𓆩✦𓆪 رَمَضَـان كَـرِيـم 𓆩✦𓆪. جروب هزار وفرح وضحك من القلب. ممنوع الخاص بين الشباب والبنات. تفاعل مع أجواء رمضانية رائعة، شارك الفيديوهات، الصور، والضحك.">
 <meta property="og:title" content="𓆩✦𓆪 رَمَضَـان كَـرِيـم 𓆩✦𓆪">
-<meta property="og:description" content="انضم إلى جروب واتساب رمضاني | هزار – فرح – روح رمضانية">
+<meta property="og:description" content="انضم لجروب واتساب رمضاني مليان هزار وضحك وفرح. ممنوع الخاص بين الشباب والبنات. تفاعل مع أجواء رمضان، شارك الفيديوهات، الصور، والضحك. ✦ رمضان يجمعنا ✦">
 <meta property="og:image" content="logo.png">
+<meta property="og:url" content="https://yourwebsite.com">
+<meta property="og:type" content="website">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="𓆩✦𓆪 رَمَضَـان كَـرِيـم 𓆩✦𓆪">
+<meta name="twitter:description" content="انضم لجروب واتساب رمضاني مليان هزار وضحك وفرح. ممنوع الخاص بين الشباب والبنات. تفاعل مع أجواء رمضان، شارك الفيديوهات، الصور، والضحك. ✦ رمضان يجمعنا ✦">
+<meta name="twitter:image" content="logo.png">
+<meta name="twitter:url" content="https://yourwebsite.com">
 
 <style>
-body{
+/* الخط iPhone */
+body {
     margin:0;
-    font-family:'Almarai', sans-serif;
+    font-family:-apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background: url('file_00000000d9ec71f5b0a3d70ebf507b32.png') no-repeat center center fixed;
     background-size: cover;
-    text-align:center;
     color:#fff;
+    text-align:center;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
 }
 
+/* المحتوى */
 .container{
-    max-width:420px;
-    margin:auto;
+    width:100%;
+    max-width:450px;
     padding:20px;
     text-align:center;
     position: relative;
     z-index:2;
 }
 
+/* لوجو الموقع */
 .logo{
     width:120px;
     margin:20px auto;
     display:block;
+    animation: logoAnim 2s ease-in-out infinite alternate;
 }
 
+/* حركة بسيطة للوجو */
+@keyframes logoAnim {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-10px);}
+}
+
+/* العنوان */
+h1{
+    font-family:'Almarai', sans-serif;
+    font-size:36px;
+    font-weight:900;
+    color:#25D366;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    margin:40px 0 20px 0;
+    animation: titleAnim 2s ease-in-out infinite alternate;
+}
+
+/* حركة بسيطة للعنوان */
+@keyframes titleAnim {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-5px);}
+}
+
+/* صورة الجروب */
 .group-img{
     width:100%;
     border-radius:15px;
-    box-shadow:0 0 15px rgba(37,211,102,0.7);
-    margin:20px 0;
+    box-shadow:0 0 25px rgba(37,211,102,0.7);
+    margin:20px auto;
+    display:block;
+    transition: transform 0.3s;
 }
 
-h1{
-    font-size:32px;
-    font-weight:900;
-    color:#25D366; /* لون واتساب */
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    margin:15px 0;
+.group-img:hover{
+    transform: scale(1.05);
 }
 
+/* زر الانضمام */
 .join-btn{
     background:#25D366;
     color:#fff;
@@ -61,21 +102,27 @@ h1{
     font-weight:bold;
     text-decoration:none;
     display:inline-block;
-    margin-top:15px;
+    margin-top:25px;
     cursor:pointer;
-    box-shadow:0 0 15px rgba(37,211,102,0.7);
+    box-shadow:0 0 20px rgba(37,211,102,0.8);
     transition:0.3s;
 }
 
 .join-btn:hover{
     background:#1ebe5d;
+    transform: scale(1.05);
+    box-shadow:0 0 25px rgba(37,211,102,1);
 }
 
-.footer{
-    margin-top:15px;
-    font-size:14px;
-    color:#fff;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+/* الوصف الطويل داخل الصفحة */
+.site-description{
+    background: rgba(0,0,0,0.5);
+    padding:15px;
+    border-radius:12px;
+    font-size:15px;
+    line-height:1.7;
+    margin-top:20px;
+    text-align:right;
 }
 </style>
 </head>
@@ -86,7 +133,7 @@ h1{
     <!-- لوجو الموقع -->
     <img src="logo.png" class="logo" alt="لوجو الموقع">
 
-    <!-- اسم الجروب -->
+    <!-- عنوان الجروب -->
     <h1>𓆩✦𓆪 رَمَضَـان كَـرِيـم 𓆩✦𓆪</h1>
 
     <!-- صورة الجروب -->
@@ -97,8 +144,13 @@ h1{
         ✅ انضم الآن
     </a>
 
-    <div class="footer">
-        ✦ رمضان يجمعنا ✦
+    <!-- الوصف داخل الصفحة -->
+    <div class="site-description">
+        ✦ مرحبًا بكم في جروب واتساب رمضاني 𓆩✦𓆪 رَمَضَـان كَـرِيـم 𓆩✦𓆪، مليان هزار وفرح وضحك من القلب.<br>
+        ✦ ممنوع الخاص بين الشباب والبنات.<br>
+        ✦ شارك الفيديوهات والصور والأجواء الرمضانية الجميلة.<br>
+        ✦ تفاعل يوميًا مع أصدقاءك وتمتع بروح رمضان المليئة بالخير والبهجة.<br>
+        ✦ انضم الآن واستمتع بأجمل لحظات رمضان مع أجواء مرحة وممتعة.
     </div>
 
 </div>
