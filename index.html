@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>𓆩✦𓆪 رَمَضَـان كَـرِيـم 𓆩✦𓆪</title>
+
+<meta property="og:title" content="𓆩✦𓆪 رَمَضَـان كَـرِيـم 𓆩✦𓆪">
+<meta property="og:description" content="انضم إلى جروب واتساب رمضاني | هزار – فرح – روح رمضانية">
+<meta property="og:image" content="logo.png">
+
+<style>
+body{
+    margin:0;
+    font-family:tahoma;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:#fff;
+    text-align:center;
+}
+
+.container{
+    max-width:420px;
+    margin:auto;
+    padding:20px;
+}
+
+.logo{
+    width:120px;
+    margin:20px auto;
+}
+
+.group-img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 0 20px gold;
+    margin:20px 0;
+}
+
+h1{
+    color:gold;
+}
+
+.join-btn{
+    background:#25D366;
+    color:#fff;
+    padding:15px;
+    border-radius:12px;
+    font-size:20px;
+    text-decoration:none;
+    display:block;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+.overlay{
+    position:fixed;
+    top:0;left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:999;
+}
+
+.video-box{
+    width:90%;
+    max-width:500px;
+}
+
+.video-box video{
+    width:100%;
+    border-radius:12px;
+}
+
+.skip-btn{
+    margin-top:15px;
+    background:#ffd700;
+    color:#000;
+    padding:12px;
+    border-radius:10px;
+    display:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img src="logo.png" class="logo" alt="لوجو الموقع">
+
+<h1>𓆩✦𓆪 رَمَضَـان كَـرِيـم 𓆩✦𓆪</h1>
+
+<img src="group.png" class="group-img" alt="صورة الجروب">
+
+<div class="join-btn" onclick="showVideo()">✅ انضم الآن</div>
+
+</div>
+
+<!-- شاشة الفيديو -->
+<div class="overlay" id="videoLayer">
+  <div class="video-box">
+    <video id="promoVideo" controls>
+      <source src="14ab5c62f57c1836d41eb29bcd333fa4.mp4" type="video/mp4">
+      متصفحك لا يدعم تشغيل الفيديو
+    </video>
+
+    <div class="skip-btn" id="goBtn" onclick="goWhatsapp()">
+      ▶ دخول الجروب
+    </div>
+  </div>
+</div>
+
+<script>
+function showVideo(){
+    document.getElementById("videoLayer").style.display="flex";
+    document.getElementById("promoVideo").play();
+}
+
+document.getElementById("promoVideo").onended = function(){
+    document.getElementById("goBtn").style.display="block";
+};
+
+function goWhatsapp(){
+    window.location.href="https://chat.whatsapp.com/GSbUn3ZGwSEI3kHI2RwaiV?mode=gi_t";
+}
+</script>
+
+</body>
+</html>
